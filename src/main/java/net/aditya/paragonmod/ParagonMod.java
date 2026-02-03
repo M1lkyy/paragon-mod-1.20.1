@@ -2,6 +2,8 @@ package net.aditya.paragonmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +29,9 @@ public class ParagonMod {
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModItems.registerItems(modEventBus);
+        ModBlocks.registerBlocks(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -46,7 +51,11 @@ public class ParagonMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_CITRINE);
+        } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.CITRINE_ORE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
