@@ -16,6 +16,7 @@ public class ModBlocks {
     public static RegistryObject<Block> CITRINE_ORE = BLOCKS.register("citrine_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
                     .requiresCorrectToolForDrops()
+                    .strength(3f)
             ));
 
     public static void registerBlocks(IEventBus eventBus) {

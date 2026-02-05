@@ -16,6 +16,7 @@ public class ModItems {
 
     // Actual items
     public static RegistryObject<Item> RAW_CITRINE = ITEMS.register("raw_citrine", () -> new Item(new Item.Properties().requiredFeatures()));
+    public static RegistryObject<Item> CITRINE_INGOT = ITEMS.register("citrine_ingot", () -> new Item(new Item.Properties().requiredFeatures()));
 
 
     // BlockItems

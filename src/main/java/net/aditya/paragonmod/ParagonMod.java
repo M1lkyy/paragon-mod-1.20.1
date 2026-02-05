@@ -53,6 +53,7 @@ public class ParagonMod {
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_CITRINE);
+            event.accept(ModItems.CITRINE_INGOT);
         } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.CITRINE_ORE);
         }
