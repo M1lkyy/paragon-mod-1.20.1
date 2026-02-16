@@ -19,6 +19,12 @@ public class ModBlocks {
                     .strength(3f)
             ));
 
+    public static RegistryObject<Block> CITRINE_BLOCK = BLOCKS.register("citrine_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+            ));
+
     public static void registerBlocks(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }

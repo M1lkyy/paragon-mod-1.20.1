@@ -22,6 +22,8 @@ public class ModItems {
     // BlockItems
     public static final RegistryObject<Item> CITRINE_ORE_BLOCK_ITEM = ITEMS.register("citrine_ore",
             () -> new BlockItem(ModBlocks.CITRINE_ORE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CITRINE_BLOCK_BLOCK_ITEM = ITEMS.register("citrine_block",
+            () -> new BlockItem(ModBlocks.CITRINE_BLOCK.get(), new Item.Properties()));
 
     public static void registerItems(IEventBus eventBus) {
         ITEMS.register(eventBus);
