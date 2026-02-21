@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "paragonmod:double_tree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "distance": 50,
+    "spread": 1,
+    "count": 1,
+    "preferred_biomes": "minecraft:the_void",
+    "salt": 1238745
+  }
+}
