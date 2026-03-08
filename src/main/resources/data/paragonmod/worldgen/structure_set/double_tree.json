@@ -10,7 +10,7 @@
     "distance": 50,
     "spread": 1,
     "count": 1,
-    "preferred_biomes": "minecraft:the_void",
+    "preferred_biomes": "#paragonmod:void_only",
     "salt": 1238745
   }
 }

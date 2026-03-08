@@ -19,30 +19,30 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Optional;
 
 @Mod.EventBusSubscriber(modid = "paragonmod")
-public class IslandHandler extends Structure {
-    public static final ResourceKey<Level> MYSTICITY = ResourceKey.create(
-            Registries.DIMENSION, ResourceLocation.fromNamespaceAndPath("paragonmod", "mysticity")
-    );
-
-    public IslandHandler(StructureSettings settings) {
-        super(settings);
-    }
-
-    @SubscribeEvent
-    public static void loadedDimension() {
-        if (MYSTICITY != null) {
-            StructureType<BuriedTreasureStructure>
-        }
-    }
-
-    @Override
-    protected Optional<GenerationStub> findGenerationPoint(GenerationContext generationContext) {
-        return Optional.empty();
-    }
-
-    @Override
-    public StructureType<?> type() {
-        return null;
-    }
+public class IslandHandler {
+//    public static final ResourceKey<Level> MYSTICITY = ResourceKey.create(
+//            Registries.DIMENSION, ResourceLocation.fromNamespaceAndPath("paragonmod", "mysticity")
+//    );
+//
+//    public IslandHandler(StructureSettings settings) {
+//        super(settings);
+//    }
+//
+//    @SubscribeEvent
+//    public static void loadedDimension() {
+//        if (MYSTICITY != null) {
+//            StructureType<BuriedTreasureStructure>
+//        }
+//    }
+//
+//    @Override
+//    protected Optional<GenerationStub> findGenerationPoint(GenerationContext generationContext) {
+//        return Optional.empty();
+//    }
+//
+//    @Override
+//    public StructureType<?> type() {
+//        return null;
+//    }
 }
 
