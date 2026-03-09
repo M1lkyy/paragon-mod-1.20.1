@@ -6,11 +6,9 @@
     }
   ],
   "placement": {
-    "type": "minecraft:concentric_rings",
-    "distance": 50,
-    "spread": 1,
-    "count": 1,
-    "preferred_biomes": "#paragonmod:void_only",
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 10,
     "salt": 1238745
   }
 }
