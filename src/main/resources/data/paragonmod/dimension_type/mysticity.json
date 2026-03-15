@@ -19,6 +19,7 @@
     }
   },
   "spawn_light_limit": 0,
+  "has_fixed_time": false,
   "natural": true,
   "piglin_safe": false,
   "respawn_anchor_works": false,
